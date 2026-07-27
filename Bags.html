@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crochet Bags | Crochet Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <link rel="stylesheet" href="Bags.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        Crochet<span>Store</span>
+    </div>
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="./products.html">Products</a>
+            </li>
+
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="./Bags.css">Bags</a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+    <div class="nav-icons">
+
+        <a href="#products">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+
+        <a href="#cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="bags-hero">
+
+    <div>
+
+        <h1>Beautiful Crochet Bags</h1>
+
+        <p>
+            Discover our handmade crochet bags collection.
+            Stylish, unique and made with love for every occasion.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <h2>Our Crochet Bags</h2>
+
+    <p>
+        Choose from beautiful handmade crochet handbags,
+        shoulder bags, tote bags, mini bags and more.
+    </p>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search bags..."
+        >
+
+        <button onclick="searchProducts()">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="filter-section">
+
+    <div class="filter-buttons">
+
+        <button
+            class="active"
+            onclick="filterProducts('all',this)">
+            All Bags
+        </button>
+
+        <button
+            onclick="filterProducts('handbag',this)">
+            Hand Bags
+        </button>
+
+        <button
+            onclick="filterProducts('tote',this)">
+            Tote Bags
+        </button>
+
+        <button
+            onclick="filterProducts('shoulder',this)">
+            Shoulder Bags
+        </button>
+
+        <button
+            onclick="filterProducts('mini',this)">
+            Mini Bags
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+    <div class="products-grid" id="productsGrid">
+
+
+        <!-- BAG 1 -->
+
+        <div class="product-card" data-category="handbag">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
+                alt="Crochet Hand Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Hand Bag</span>
+
+                <h3>Pink Crochet Hand Bag</h3>
+
+                <p>
+                    Beautiful handmade crochet handbag
+                    for everyday use.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£25</span>
+
+                    <button class="cart-btn">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 2 -->
+
+        <div class="product-card" data-category="tote">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800"
+                alt="Crochet Tote Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Tote Bag</span>
+
+                <h3>Classic Crochet Tote</h3>
+
+                <p>
+                    Spacious crochet tote bag
+                    for shopping and daily use.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£28</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 3 -->
+
+        <div class="product-card" data-category="shoulder">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=800"
+                alt="Shoulder Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Shoulder Bag</span>
+
+                <h3>Elegant Shoulder Bag</h3>
+
+                <p>
+                    Cute handmade shoulder bag
+                    with a stylish design.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£30</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 4 -->
+
+        <div class="product-card" data-category="mini">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800"
+                alt="Mini Crochet Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Mini Bag</span>
+
+                <h3>Cute Mini Crochet Bag</h3>
+
+                <p>
+                    Small and adorable crochet bag
+                    for special occasions.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£18</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 5 -->
+
+        <div class="product-card" data-category="handbag">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800"
+                alt="Cream Crochet Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Hand Bag</span>
+
+                <h3>Cream Crochet Bag</h3>
+
+                <p>
+                    Simple and elegant handmade
+                    crochet handbag.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£27</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 6 -->
+
+        <div class="product-card" data-category="tote">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=800"
+                alt="Crochet Tote">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Tote Bag</span>
+
+                <h3>Flower Crochet Tote</h3>
+
+                <p>
+                    Beautiful handmade tote bag
+                    with floral style.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£32</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 7 -->
+
+        <div class="product-card" data-category="shoulder">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=800"
+                alt="Crochet Shoulder Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Shoulder Bag</span>
+
+                <h3>Lovely Shoulder Bag</h3>
+
+                <p>
+                    Handmade crochet shoulder bag
+                    with a cute finish.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£29</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BAG 8 -->
+
+        <div class="product-card" data-category="mini">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=800"
+                alt="Mini Bag">
+
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="tag">Mini Bag</span>
+
+                <h3>Mini Flower Bag</h3>
+
+                <p>
+                    Cute mini crochet bag
+                    with a lovely floral look.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="product-bottom">
+
+                    <span class="price">£20</span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CART ================= -->
+
+<section class="cart-section" id="cart">
+
+    <h2 class="cart-title">
+        🛒 Your Cart
+    </h2>
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-bottom">
+
+        <h3>
+            Total: £<span id="cartTotal">0</span>
+        </h3>
+
+        <button class="order-btn" onclick="orderDone()">
+            Order Done
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>CrochetStore</h2>
+
+    <p>
+        Beautiful handmade crochet bags made with love ❤️
+    </p>
+
+    <div class="social">
+
+        <a href="https://wa.me/923001234567" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.instagram.com/your_username" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@your_username" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+    </div>
+
+    <p>
+        © 2026 CrochetStore. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="Bags.js"></script>
+</body>
+</html>

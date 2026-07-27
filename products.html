@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Crochet Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+   <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        Crochet<span>Store</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="./products.html" class="active">Products</a>
+            </li>
+
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+             <li>
+                <a href="./Bags.html">Bags</a>
+            </li>
+            <li>
+            <a href="#cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cartCount">0</span>
+</a>
+</li>
+        </ul>
+    </nav>
+
+    <div class="nav-icons">
+
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="products-hero">
+
+    <div>
+
+        <h1>Our Crochet Products</h1>
+
+        <p>
+            Explore our beautiful handmade crochet collection,
+            created with love, creativity and care.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-area">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search crochet products..."
+        >
+
+        <button onclick="searchProducts()">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="category-section">
+
+    <h2 class="section-title">
+        Shop By Category
+    </h2>
+
+    <div class="category-buttons">
+
+        <button onclick="filterProducts('gajras',this)">
+            Gajras
+        </button>
+
+        <button onclick="filterProducts('keychains',this)">
+            Keychains
+        </button>
+
+        <button onclick="filterProducts('bags',this)">
+            Bags
+        </button>
+
+        <button onclick="filterProducts('flowers',this)">
+            Flowers
+        </button>
+
+        <button onclick="filterProducts('bouquets',this)">
+            Bouquets
+        </button>
+
+        <button onclick="filterProducts('gifts',this)">
+            Gift Sets
+        </button>
+
+        <button onclick="filterProducts('hair',this)">
+            Hair Accessories
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section">
+
+    <div class="products-grid" id="productsGrid">
+
+
+        <!-- Product 1 -->
+
+        <div class="product-card" data-category="gajras">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=700"
+                alt="Crochet Gajra">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Gajras
+                </span>
+
+                <h3>Crochet Gajra</h3>
+
+                <p>
+                    Beautiful handmade crochet gajra.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £12
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+
+        <div class="product-card" data-category="keychains">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=700"
+                alt="Crochet Keychain">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Keychains
+                </span>
+
+                <h3>Crochet Keychain</h3>
+
+                <p>
+                    Cute handmade crochet keychain.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £7
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 3 -->
+
+        <div class="product-card" data-category="bags">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700"
+                alt="Crochet Bag">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Bags
+                </span>
+
+                <h3>Crochet Hand Bag</h3>
+
+                <p>
+                    Stylish handmade crochet bag.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £25
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 4 -->
+
+        <div class="product-card" data-category="flowers">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=700"
+                alt="Crochet Flower">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Flowers
+                </span>
+
+                <h3>Crochet Flower</h3>
+
+                <p>
+                    Handmade decorative crochet flower.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £8
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 5 -->
+
+        <div class="product-card" data-category="bouquets">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=700"
+                alt="Crochet Bouquet">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Bouquets
+                </span>
+
+                <h3>Crochet Flower Bouquet</h3>
+
+                <p>
+                    A lovely handmade crochet bouquet.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £30
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 6 -->
+
+        <div class="product-card" data-category="gifts">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=700"
+                alt="Crochet Gift">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Gift Sets
+                </span>
+
+                <h3>Crochet Gift Box</h3>
+
+                <p>
+                    A cute handmade gift collection.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £35
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 7 -->
+
+        <div class="product-card" data-category="hair">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700"
+                alt="Hair Accessories">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Hair Accessories
+                </span>
+
+                <h3>Crochet Hair Bow</h3>
+
+                <p>
+                    Cute handmade crochet hair accessory.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £6
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 8 -->
+
+        <div class="product-card" data-category="gajras">
+
+            <div class="product-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=700"
+                alt="Crochet Flowers">
+
+                <button class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="category-name">
+                    Gajras
+                </span>
+
+                <h3>Pink Crochet Gajra</h3>
+
+                <p>
+                    Beautiful pink handmade gajra.
+                </p>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <div class="bottom">
+
+                    <span class="price">
+                        £14
+                    </span>
+
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="cart-section" id="cart">
+
+    <h2 class="section-title">
+        🛒 Your Cart
+    </h2>
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3>
+            Total: £<span id="cartTotal">0</span>
+        </h3>
+
+        <button
+            class="order-btn"
+            onclick="orderDone()">
+
+            Order Done
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>CrochetStore</h2>
+
+    <p>
+        Handmade crochet products made with love ❤️
+    </p>
+
+    <div class="social">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/923001234567" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/your_username" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@your_username" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+    </div>
+
+    <p>
+        © 2026 CrochetStore. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="products.js"></script>
+</body>
+</html>

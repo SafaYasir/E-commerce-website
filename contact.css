@@ -1,0 +1,199 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f7f7f7;
+}
+
+/* Navbar */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#fff;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ff4f81;
+}
+
+.logo span{
+color:#333;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff4f81;
+}
+
+/* Contact */
+
+.contact{
+padding:80px 8%;
+}
+
+.contact h1{
+text-align:center;
+font-size:45px;
+margin-bottom:15px;
+color:#333;
+}
+
+.contact p{
+text-align:center;
+color:#666;
+margin-bottom:50px;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-info{
+background:linear-gradient(135deg,#ff4f81,#ff8fb0);
+padding:40px;
+border-radius:20px;
+color:white;
+}
+
+.contact-info h2{
+margin-bottom:30px;
+}
+
+.info{
+display:flex;
+align-items:center;
+margin:25px 0;
+}
+
+.info i{
+font-size:25px;
+margin-right:20px;
+}
+
+.contact-form{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+padding:15px;
+margin:15px 0;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+font-size:16px;
+
+}
+
+.contact-form textarea{
+height:150px;
+resize:none;
+}
+
+.contact-form button{
+
+width:100%;
+padding:15px;
+border:none;
+background:#ff4f81;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#e6396d;
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:60px;
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+.social{
+
+margin-top:15px;
+
+}
+
+.social a{
+
+color:white;
+font-size:25px;
+margin:0 10px;
+transition:.3s;
+
+}
+
+.social a:hover{
+
+color:#ff4f81;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+header{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+}
