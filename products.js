@@ -6,7 +6,7 @@ const products = [
         description:"Beautiful handmade crochet gajra for weddings and special occasions.",
         price:12,
         category:"Gajras",
-        image:"https://images.unsplash.com/photo-1528825871115-3581a5387919?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ6LS52DGiEzFB9g1dsvqrtuoCsdLQ5jA0ukW-u6VTdQ&s=10"
     },
 
     {
@@ -15,34 +15,17 @@ const products = [
         description:"Cute handmade crochet keychain for bags, keys and gifts.",
         price:7,
         category:"Keychains",
-        image:"https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZW4CIKYJx8RUtuj1_Zm7lMKGhigYgFZTQ4lPyTY9kGg&s"
     },
 
-    {
-        id:3,
-        name:"Crochet Hand Bag",
-        description:"Stylish handmade crochet handbag for everyday use.",
-        price:25,
-        category:"Bags",
-        image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700"
-    },
-
-    {
-        id:4,
-        name:"Crochet Flower",
-        description:"Beautiful handmade crochet flower for decoration and gifts.",
-        price:8,
-        category:"Flowers",
-        image:"https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=700"
-    },
-
+   
     {
         id:5,
         name:"Crochet Flower Bouquet",
         description:"Lovely handmade crochet flower bouquet made with care.",
         price:30,
         category:"Bouquets",
-        image:"https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuP7-LIQCHAcXQntk7WwCdIvOHiC-Xo5h4c3A-u0UUw&s=10"
     },
 
     {
@@ -51,7 +34,7 @@ const products = [
         description:"Cute handmade crochet gift collection for special people.",
         price:35,
         category:"Gifts",
-        image:"https://images.unsplash.com/photo-1513883049090-d0b7439799bf?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESUW_miYB_Ntu-NybVACd9JbyFlUQAnyZbNw7AeIlJQ&s"
     },
 
     {
@@ -60,7 +43,7 @@ const products = [
         description:"Cute handmade crochet hair bow for a lovely hairstyle.",
         price:6,
         category:"Hair Accessories",
-        image:"https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhfSoooYT7xyYXyE4BXAaY49TARxTBr-P4d0T74wPhpQ&s=10"
     },
 
     {
@@ -69,7 +52,7 @@ const products = [
         description:"Beautiful pink crochet gajra with a soft handmade design.",
         price:14,
         category:"Gajras",
-        image:"https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxuuba4Z704VNFSN7DFa-j9AuWRIryffI407R9wX11Nw&s"
     },
 
     {
@@ -78,7 +61,7 @@ const products = [
         description:"Adorable bunny crochet keychain for bags and accessories.",
         price:9,
         category:"Keychains",
-        image:"https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEelWshxy6IGbeYNOIDaHhye0W_ITQvz1KvyW98uvmQ&s=10"
     },
 
     {
@@ -87,7 +70,7 @@ const products = [
         description:"Elegant handmade crochet shoulder bag for everyday outfits.",
         price:28,
         category:"Bags",
-        image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR759k6ZGaK2cJsEzhZg6r8-qsKV323a2OD-4_YnZCO0A&s=10"
     },
 
     {
@@ -96,7 +79,7 @@ const products = [
         description:"Handmade crochet rose for decoration and gifting.",
         price:10,
         category:"Flowers",
-        image:"https://images.unsplash.com/photo-1496062031456-07b8f162a322?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYn2J2OH9LLaqe5sfFj0IapvagnGoGkK60F1VO_twmMA&s=10"
     },
 
     {
@@ -105,7 +88,7 @@ const products = [
         description:"Pretty crochet rose bouquet perfect for birthdays and gifts.",
         price:32,
         category:"Bouquets",
-        image:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq7fzvmRbUnv-eRfiO8mszKxT7x1jyEAMuqJKJqSVWfw&s=10"
     },
 
     {
@@ -114,7 +97,7 @@ const products = [
         description:"Special handmade crochet gift set for birthdays and celebrations.",
         price:40,
         category:"Gifts",
-        image:"https://images.unsplash.com/photo-1512909006721-3d6018887383?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7_GHi7fHn20tJ6x7p6Ignw65BVFzV-QSrvijzB_Mx1Q&s=10"
     },
 
     {
@@ -123,7 +106,7 @@ const products = [
         description:"Cute crochet hair clip with a soft handmade finish.",
         price:7,
         category:"Hair Accessories",
-        image:"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xmAPd7_LyrQzBmhcIpIO0-3NC-9A9ebZEQC-K8IEYw&s=10"
     },
 
     {
@@ -132,7 +115,7 @@ const products = [
         description:"Elegant white crochet gajra suitable for weddings and events.",
         price:15,
         category:"Gajras",
-        image:"https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvSZoWSgIksdjR9BvE1K8oONg4Z9VGc_XaxVRmueKPg&s=10"
     },
 
     {
@@ -141,7 +124,7 @@ const products = [
         description:"Cute handmade crochet star keychain for your bag or keys.",
         price:8,
         category:"Keychains",
-        image:"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsW-ZjmU5tutBJPzmxDNhG1BbD8WTsedlXozP5TRrNw&s=10"
     },
 
     {
@@ -150,7 +133,7 @@ const products = [
         description:"Spacious handmade crochet tote bag for shopping and daily use.",
         price:30,
         category:"Bags",
-        image:"https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XJjQwzO4oDY0GzXw4Jgq4D9TPahSJ9EtqARnA9SgsQ&s=10"
     },
 
     {
@@ -159,7 +142,7 @@ const products = [
         description:"Bright handmade crochet sunflower for decoration and gifts.",
         price:11,
         category:"Flowers",
-        image:"https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0b1VmiFj_5O36rOBh59LWtZVwMvDUmtn1b7EsQp0NmQ&s=10"
     },
 
     {
@@ -168,7 +151,7 @@ const products = [
         description:"Beautiful mixed crochet flower bouquet made specially by hand.",
         price:38,
         category:"Bouquets",
-        image:"https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=700"
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvLqZ6dt0CUKFAeb0aXpfyWMiyx2alt6CddM23vKQ0g&s=10"
     },
 
     {
@@ -177,7 +160,7 @@ const products = [
         description:"Lovely crochet gift hamper containing handmade decorative items.",
         price:45,
         category:"Gifts",
-        image:"https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=700"
+        image:"https://cdn.shopaccino.com/guljaipur/products/45-189508542706950_m.jpg?v=730"
     }
 
 ];
